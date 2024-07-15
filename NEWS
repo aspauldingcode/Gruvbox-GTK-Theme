@@ -10,19 +10,20 @@ Changes from version gtk-mac-integration-2.1.3 to version
 * Removed the obsolete Carbon-based gtk-mac-bundle, gtk-mac-dock, and
         gtk-mac-menu.
 * Removed the obsolete PyGtk bindings.
-* Added translations for Croatian, Friulian, Greek, and Slovenian
-* Updated Danish, Hungarian, Korean, and Turkish Translations
-* Replaced git repository and bug URLs to reflect Gnome project's move to
-        gitlab.gnome.org
+* Added translations for Croatian, Friulian, Greek, and Slovenian.
+* Updated Danish, Hungarian, Korean, and Turkish translations.
+* Replaced git repository and bug URLs to reflect GNOME project's move to
+        gitlab.gnome.org.
 
 Changes from version gtk-mac-integration-2.1.2 to version
         gtk-mac-integration-2.1.3
-* Use glib instead of the custom gettext code (HEAD, origin/master, orig* Add Indonesian translation
-* fix typo in CGBitmapInfo
-* Fix invalid image alphaInfo error
-* Update German translation
-* Add Brazilian Portuguese translation
-* Add Indonesian translation
+* Use glib instead of the custom gettext code (HEAD, origin/master, orig).
+* Add Indonesian translation.
+* Fix typo in CGBitmapInfo.
+* Fix invalid image alphaInfo error.
+* Update German translation.
+* Add Brazilian Portuguese translation.
+* Add Indonesian translation.
 
 Changes from version gtk-mac-integration-2.1.1 to version
         gtk-mac-integration-2.1.2
@@ -59,17 +60,17 @@ Changes from version gtk-mac-integration-2.0.7 to version
 * Bug 744597 - Document that gtk_menu_reorder_child() doesn't update the menu.
 * Update documents for current version of Gtk-Docs.
 * Fix compile error on Leopard & Tiger.
-* Minor build system improvements
-* Make it possible to override libtoolize
-* Get PyGObject-2.0's datadir from pkg-config
-* Update .gitignore
-* Fix autotools warnings and modernize some
-* Use seperate configure flags for gtk2 and gtk3
-      Changes --with-gtk=gtk2 (which was broken) to --with-gtk2 and --with-gtk3
+* Minor build system improvements.
+* Make it possible to override libtoolize.
+* Get PyGObject-2.0's datadir from pkg-config.
+* Update .gitignore.
+* Fix autotools warnings and modernize some.
+* Use separate configure flags for gtk2 and gtk3.
+      Changes --with-gtk=gtk2 (which was broken) to --with-gtk2 and --with-gtk3.
       This allows you to build against both at the same time.
       None of the pkgconfig files should have been changed but there is only
       a single includedir now since they are the same.
-* Use gnome-autogen.sh
+* Use gnome-autogen.sh.
 
 Changes from version gtk-mac-integration-2.0.6 to version
 	gtk-mac-integration-2.0.7
@@ -116,7 +117,7 @@ Changes from version gtk-mac-integration-2.0.0 to version
 
 gtk-mac-integration-2.0.0:
 
-*  Now fully compatible with gobject-introspection and useable with Gtk3 gi
+*  Now fully compatible with gobject-introspection and usable with Gtk3 gi
    bindings.
       Note: Gtk_OSXApplication is now GtkOsx_Application to avoid namespace
        collision with Gtk. This requires minor changes to application code.
@@ -140,7 +141,7 @@ gtk-mac-integration-1.0.1:
 gtk-mac-integration-1.0.0:
 
 * The major change here is the project name, from ige-mac-integration,
-  part of moving the project to Gnome.org. All functons and symbols
+  part of moving the project to Gnome.org. All functions and symbols
   that started with ige now start with gtk instead.
 
 * Deprecated forms of bundle access functions removed.
@@ -160,6 +161,3 @@ ige-mac-integration-0.9.8:
   multi-threaded applications.
 
 * Fixed a bug which caused the menubar to display two Apple icons.
-
-
-

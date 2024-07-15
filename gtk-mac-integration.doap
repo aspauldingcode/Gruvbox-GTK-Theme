@@ -14,8 +14,8 @@
   menus on the Mac's single menubar, adding items to the Dock menu,
   and bouncing the Dock icon for notifications.
 
-  Gtk-mac-integration is licensed under the Gnu Lesser General Public
-  License, the same terms under whic Gtk+ is licensed.</description>
+  Gtk-mac-integration is licensed under the GNU Lesser General Public
+  License, the same terms under which Gtk+ is licensed.</description>
   <homepage rdf:resource="https://www.gtk.org/" />
   <license rdf:resource="http://usefulinc.com/doap/licenses/gpl" />
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gtk-mac-integration/issues/" />

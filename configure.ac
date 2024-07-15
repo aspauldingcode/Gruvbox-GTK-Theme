@@ -5,7 +5,7 @@ AC_INIT(gtk-mac-integration, 3.0.1)
 # The string is of the form C:R:A.
 # - If interfaces have been changed or added, but binary compatibility has
 #   been preserved, change to C+1:0:A+1
-# - If binary compatibility has been broken (eg removed or changed interfaces)
+# - If binary compatibility has been broken (e.g., removed or changed interfaces),
 #   change to C+1:0:0
 # - If the interface is the same as the previous version, change to C:R+1:A
 
@@ -57,15 +57,15 @@ AC_ARG_WITH([gtk3], [AS_HELP_STRING([--with-gtk3], [build against gtk3])] ,[with
 
 if test "x$with_gtk3" = "xyes" ; then
     PKG_CHECK_MODULES([GTK3], [gtk+-3.0], [],
-       with_gtk3=no
-       AC_MSG_WARN([GTK+-3.0 not found])
+       [with_gtk3=no
+       AC_MSG_WARN([GTK+-3.0 not found])]
     )
 fi
 
 if test "x$with_gtk2" = "xyes" ; then
     PKG_CHECK_MODULES([GTK2], [gtk+-2.0], [],
-       with_gtk2=no
-       AC_MSG_WARN([GTK+-2.0 not found])
+       [with_gtk2=no
+       AC_MSG_WARN([GTK+-2.0 not found])]
     )
 fi
 
@@ -83,12 +83,12 @@ GOBJECT_INTROSPECTION_CHECK([0.10.1])
 ACLOCAL_AMFLAGS="\${ACLOCAL_FLAGS}"
 AC_SUBST(ACLOCAL_AMFLAGS)
 if test "x$prefix" = xNONE; then
-  AC_DEFINE_UNQUOTED([PREFIX],["$ac_default_prefix"], [Installation prefix (for making filenames)])
+  AC_DEFINE_UNQUOTED([PREFIX], ["$ac_default_prefix"], [Installation prefix (for making filenames)])
 else
-  AC_DEFINE_UNQUOTED([PREFIX],["$prefix"], [Installation prefix (for making filenames)])
+  AC_DEFINE_UNQUOTED([PREFIX], ["$prefix"], [Installation prefix (for making filenames)])
 fi
 
-AC_CONFIG_FILES(
+AC_CONFIG_FILES([
     po/Makefile.in
     Makefile
     src/Makefile
@@ -97,7 +97,7 @@ AC_CONFIG_FILES(
     docs/reference/Makefile
     data/gtk-mac-integration-gtk2.pc
     data/gtk-mac-integration-gtk3.pc
-)
+])
 
 AC_OUTPUT
 
